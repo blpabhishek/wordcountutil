@@ -1,2 +1,1 @@
-javac -cp out:. -d out src/WCUtil.java;
-java -cp out WCUtil $*
+javac -cp out:. -d out src/* && java -cp out WCUtil $*

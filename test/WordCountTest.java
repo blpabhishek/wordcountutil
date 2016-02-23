@@ -31,6 +31,6 @@ public class WordCountTest {
 		String text ="This is a Sample Line\n This is second Line";
 		String fileName ="sample.txt";
 		WordCount wc = new WordCount(text);
-		assertEquals("\t\b2\t\b10\t\b42 sample.txt",wc.getDefault(fileName));
+		assertEquals("\t\b2\t\b10\t\b42 sample.txt",wc.getResult(fileName,""));
 	}
 }
