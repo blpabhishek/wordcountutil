@@ -1,1 +1,1 @@
-javac -cp out:. -d out src/* && java -cp out WCUtil $*
+java -cp "out/production/wc" WCUtil $*

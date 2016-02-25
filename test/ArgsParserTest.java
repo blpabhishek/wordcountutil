@@ -17,14 +17,14 @@ public class ArgsParserTest {
 		Assert.assertEquals(expected,p.getOptions());
 	}
 	@Test
-	public void getOptions_returns_all_the_optins(){
+	public void getOptions_returns_all_the_options_given_together(){
 		String [] args ={"-wlc","file"};
 		ArgsParser p = new ArgsParser(args);
 		String expected = new String("wlc");
 		Assert.assertEquals(expected,p.getOptions());
 	}
 	@Test
-	public void getOptions_returns_all_the_ptins(){
+	public void getOptions_returns_all_the_optins_given_mixed(){
 		String [] args ={"-cl","-w","file"};
 		ArgsParser p = new ArgsParser(args);
 		String expected = new String("clw");
